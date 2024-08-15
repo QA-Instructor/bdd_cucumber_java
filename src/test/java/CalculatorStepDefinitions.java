@@ -26,7 +26,8 @@ public class CalculatorStepDefinitions {
 
     @When("I subtract {int} from {int}")
     public void i_subtract_from(Integer int1, Integer int2) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        calc.push(int1);
+        calc.push(int2);
+        calc.push("-");
     }
 }
